@@ -1,0 +1,9 @@
+homme,2
+mother,2
+dad,1
+bad,1
+rat,1
+beautiful,3
+rudeness,3
+cleanness,3
+
