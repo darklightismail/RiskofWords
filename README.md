@@ -5,7 +5,7 @@ The goal of this game is to memorize a word and then spell it before the count-d
 It's developped using Tkinter library in Python.
 
 # Requirements to play :
-- make sure that u have installed python
+- make sure that you have installed python
 - reasign the file places in the scripts (because i had some issues with relative paths in my machine so i had to use absolute paths)
 # Start Playing :
 - Simply start by Running the LoadingScreen.py and let the games begin
