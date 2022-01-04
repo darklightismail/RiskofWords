@@ -43,28 +43,28 @@ root = tk.Tk()
 root.title('Risk of Words')
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/blackhole.gif')
+lbl.load('RISK OF  WORDS/blackhole.gif')
 root.configure(background="#262626")
 root.geometry("600x350")
 def to_main():
     root.destroy()
-    subprocess.call(["python", "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/menuGeneral.py"])
+    subprocess.call(["python", "RISK OF  WORDS/menuGeneral.py"])
 
 
 def to_inputscreen():
     root.destroy()
-    subprocess.call(["python", "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/InputScreen.py"])
+    subprocess.call(["python", "RISK OF  WORDS/InputScreen.py"])
 
 def to_easy():
     root.destroy()
-    subprocess.call(["python", "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/easy.py"])
+    subprocess.call(["python", "RISK OF  WORDS/easy.py"])
 def to_medium():
     root.destroy()
-    subprocess.call(["python", "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/medium.py"])
+    subprocess.call(["python", "RISK OF  WORDS/medium.py"])
 
 def to_hard():
     root.destroy()
-    subprocess.call(["python", "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/hard.py"])
+    subprocess.call(["python", "RISK OF  WORDS/hard.py"])
 
 
 
