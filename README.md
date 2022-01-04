@@ -8,7 +8,7 @@ PS : there is a preview video of the game in the git files : RISK OF WORDS.mp4
 
 # Requirements to play :
 - make sure that you have installed python
-- reasign the file places in the scripts (because i had some issues with relative paths in my machine so i had to use absolute paths)
+- 
 # Start Playing :
 - Simply start by Running the LoadingScreen.py and let the games begin
 # Game Previews :
