@@ -7,7 +7,7 @@ import tkinter as tk
 from tkinter import ttk
 
 import numpy as np
-# photo_path = "RISK OF  WORDS/loading.gif"
+# photo_path = "loading.gif"
 import tkinter as tk
 from PIL import Image, ImageTk
 from itertools import count
@@ -51,7 +51,7 @@ class ImageLabel(tk.Label):
 root = tk.Tk()
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('RISK OF  WORDS/sit.gif')
+lbl.load('sit.gif')
 root.geometry("600x600")
 root.configure(background="#262626")
 root.title('Risk of Words')
@@ -94,8 +94,8 @@ my_game.heading("Age", text="Age", anchor=CENTER)
 my_game.heading("higestScore", text="higestScore", anchor=CENTER)
 
 scores = []
-if (os.path.isfile('RISK OF  WORDS/leaderboard.txt') == True):
-    fout = open("RISK OF  WORDS/leaderboard.txt", 'r')
+if (os.path.isfile('leaderboard.txt') == True):
+    fout = open("leaderboard.txt", 'r')
     for line in fout:
         currentline = line.split(",")
 
@@ -130,7 +130,7 @@ style = ttk.Style()
 
 def to_main():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/menuGeneral.py"])
+    subprocess.call(["python", "menuGeneral.py"])
 
 
 style.configure("Treeview", font=("riskofrainsquare", 11), bg="White")
