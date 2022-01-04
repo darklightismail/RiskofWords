@@ -43,28 +43,28 @@ root = tk.Tk()
 root.title('Risk of Words')
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('RISK OF  WORDS/blackhole.gif')
+lbl.load('blackhole.gif')
 root.configure(background="#262626")
 root.geometry("600x350")
 def to_main():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/menuGeneral.py"])
+    subprocess.call(["python", "menuGeneral.py"])
 
 
 def to_inputscreen():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/InputScreen.py"])
+    subprocess.call(["python", "InputScreen.py"])
 
 def to_easy():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/easy.py"])
+    subprocess.call(["python", "easy.py"])
 def to_medium():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/medium.py"])
+    subprocess.call(["python", "medium.py"])
 
 def to_hard():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/hard.py"])
+    subprocess.call(["python", "hard.py"])
 
 
 
