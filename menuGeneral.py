@@ -43,20 +43,20 @@ root = tk.Tk()
 root.title('Risk of Words')
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('RISK OF  WORDS/test.gif')
+lbl.load('test.gif')
 root.configure(background="#262626")
 root.geometry("600x600")
 
 
 def to_inputscreen():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/InputScreen.py"])
+    subprocess.call(["python", "InputScreen.py"])
 def to_customgame():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/CustomGame.py"])
+    subprocess.call(["python", "CustomGame.py"])
 def to_leaderboard():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/LeaderBoard.py"])
+    subprocess.call(["python", "LeaderBoard.py"])
 btn1=tk.Button(root, text="New Player",font="riskofrainsquare", width=20, height=2, bg="white",	activebackground="#a0fa4c",command=to_inputscreen)
 btn1.pack()
 btn2=tk.Button(root, text="CUSTOM GAME",font="riskofrainsquare", width=20, height=2, bg="White", activebackground="#f4ca60",command=to_customgame)
