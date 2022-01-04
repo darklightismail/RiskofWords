@@ -4,7 +4,7 @@ import subprocess
 import time
 import tkinter as tk
 import numpy as np
-# photo_path = "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/loading.gif"
+# photo_path = "RISK OF  WORDS/loading.gif"
 import tkinter as tk
 from PIL import Image, ImageTk
 from itertools import count
@@ -48,7 +48,7 @@ class ImageLabel(tk.Label):
 root = tk.Tk()
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/loading.gif')
+lbl.load('RISK OF  WORDS/loading.gif')
 root.geometry("800x400")
 root.title('Risk of Words')
 import time
@@ -112,7 +112,7 @@ def startCountdown():
             # messagebox.showinfo("Time's Up", "Votre Score est : %d")
             root.destroy()
             subprocess.call(
-                ["python", "C:/Users/dark/Desktop/WORK/MASTER SIM TAZA/S1/PYTHON/RISK OF  WORDS/menuGeneral.py"])
+                ["python", "RISK OF  WORDS/menuGeneral.py"])
 
         userinput -= 1
 startCountdown()
