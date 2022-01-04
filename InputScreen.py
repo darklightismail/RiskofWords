@@ -48,18 +48,18 @@ class ImageLabel(tk.Label):
 
 def to_main():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/menuGeneral.py"])
+    subprocess.call(["python", "menuGeneral.py"])
 
 
 
 def to_play():
     root.destroy()
     if(varage<=12):
-        subprocess.call(["python", "RISK OF  WORDS/easy.py"])
+        subprocess.call(["python", "easy.py"])
     if (13 < varage < 18):
-        subprocess.call(["python", "RISK OF  WORDS/medium.py"])
+        subprocess.call(["python", "medium.py"])
     if (varage > 18):
-        subprocess.call(["python", "RISK OF  WORDS/hard.py"])
+        subprocess.call(["python", "hard.py"])
 varage=0
 varname=""
 leaderboardlist=[]
@@ -69,8 +69,8 @@ def confirm():
     varage =  int(age.get())
     varname=name.get()
     print(varage,varname)
-    if (os.path.isfile('RISK OF  WORDS/leaderboard.txt') == True):
-        fout = open("RISK OF  WORDS/leaderboard.txt", 'r')
+    if (os.path.isfile('leaderboard.txt') == True):
+        fout = open("leaderboard.txt", 'r')
         for line in fout:
             currentline = line.split(",")
             if(varname!=currentline[0]):
@@ -78,13 +78,13 @@ def confirm():
                 leaderstring = leaderstring + str(currentline)
         print(varname)
 
-        fil = open("RISK OF  WORDS/leaderboard.txt", 'w')
+        fil = open("leaderboard.txt", 'w')
         fil.write(varname + "," + str(varage)+",0"+'\n')
         for r in leaderboardlist:
              fil.write(str(r[0])+","+str(r[1])+",0")
 
     else:
-        fil = open("RISK OF  WORDS/leaderboard.txt", 'w')
+        fil = open("leaderboard.txt", 'w')
         fil.write(varname + "," + str(varage) +","+'0'+'\n')
 
 
@@ -93,7 +93,7 @@ root = tk.Tk()
 root.title('Risk of Words')
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('RISK OF  WORDS/fallingstars.gif')
+lbl.load('fallingstars.gif')
 root.configure(background="#262626")
 root.geometry("720x360")
 
