@@ -11,7 +11,7 @@ score=[]
 
 def to_main():
     root.destroy()
-    subprocess.call(["python", "RISK OF  WORDS/menuGeneral.py"])
+    subprocess.call(["python", "menuGeneral.py"])
 
 def anwser_verification(answer_dict):
     global word_find
@@ -56,7 +56,7 @@ def anwser_verification(answer_dict):
 
 
 wordlist = [] #import word list
-file = open("RISK OF  WORDS/medium.txt").readlines()
+file = open("medium.txt").readlines()
 print(file)
 for line in file:
     currentline = line.split(",")
@@ -102,7 +102,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 # Create a photoimage object of the image in the path
-image1 = Image.open("RISK OF  WORDS/rain.jpg")
+image1 = Image.open("rain.jpg")
 test = ImageTk.PhotoImage(image1)
 
 label1 = tkinter.Label(image=test)
@@ -121,7 +121,7 @@ scoretext.grid(row=0, column=5, pady=10, padx=10, sticky='')
 scoretext.config(text=0)
 userlist=[]
 ######BRING NAME OF USER
-fout = open("RISK OF  WORDS/leaderboard.txt", 'r')
+fout = open("leaderboard.txt", 'r')
 for line in fout:
     currentline = line.split(",")
     userlist.append(currentline)
@@ -330,7 +330,7 @@ def startCountdown():
         if (userinput == 0): #time is up
             messagebox.showinfo("Time's Up", "Votre Score est : %d" % int(scoretext.cget('text')))
             print("your score is : ",int(len(score)*10))
-            fout = open("RISK OF  WORDS/leaderboard.txt", 'r')
+            fout = open("leaderboard.txt", 'r')
             for line in fout:
                     currentline = line.split(",")
                     leaderboardlist.append(currentline)
@@ -338,7 +338,7 @@ def startCountdown():
 
 
 
-            fil = open("RISK OF  WORDS/leaderboard.txt",
+            fil = open("leaderboard.txt",
                                'w')
             leaderboardlist[0][2]=max(eval(leaderboardlist[0][2]),int(len(score)*10))
             for r in leaderboardlist:
