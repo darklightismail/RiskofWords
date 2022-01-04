@@ -48,7 +48,7 @@ class ImageLabel(tk.Label):
 root = tk.Tk()
 lbl = ImageLabel(root)
 lbl.pack()
-lbl.load('RISK OF  WORDS/loading.gif')
+lbl.load('loading.gif')
 root.geometry("800x400")
 root.title('Risk of Words')
 import time
@@ -112,7 +112,7 @@ def startCountdown():
             # messagebox.showinfo("Time's Up", "Votre Score est : %d")
             root.destroy()
             subprocess.call(
-                ["python", "RISK OF  WORDS/menuGeneral.py"])
+                ["python", "menuGeneral.py"])
 
         userinput -= 1
 startCountdown()
