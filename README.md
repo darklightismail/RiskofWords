@@ -7,7 +7,8 @@ It's developped using Tkinter library in Python.
 PS : there is a preview video of the game in the git files : RISK OF WORDS.mp4
 
 # Requirements to play :
-- make sure that you have installed python
+- Make sure that you have installed python (including libraries like tkinter).
+- Intall the font of the game : https://fontmeme.com/fonts/risk-of-rain-square-font/
 
 # Start Playing :
 - Simply start by Running the LoadingScreen.py and let the games begin
