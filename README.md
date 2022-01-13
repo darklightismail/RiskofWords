@@ -20,13 +20,13 @@ PS : there is a preview video of the game in the git files : RISK OF WORDS.mp4
 ![loading](https://user-images.githubusercontent.com/47457939/147987661-699aa639-d7f9-4975-bbf7-96d8160df939.gif)
 
 
-after about 4s it will take you to the General Menu :
+- After about 4s it will take you to the General Menu :
 
 
 ![image](https://user-images.githubusercontent.com/47457939/147987839-7d6fd1b8-5211-4b34-a4c3-4f57e94c686f.png)
 
 
--General Menu 
+- General Menu 
  it has 4 buttons :
  
 *New Player : flr new players to start playing.
