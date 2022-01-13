@@ -4,6 +4,10 @@ The goal of this game is to memorize a word and then spell it before the count-d
 
 It's developped using Tkinter library in Python.
 
+
+https://user-images.githubusercontent.com/47457939/149320278-a45fc746-5b08-483a-af8a-f1ea15f7cca4.mp4
+
+
 PS : there is a preview video of the game in the git files : RISK OF WORDS.mp4
 
 # Requirements to play :
